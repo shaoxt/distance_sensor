@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lidar</title>
+    <script type="application/javascript">
+      function draw() {
+        cX = 300;
+        cY = 300;
+        const canvas = document.getElementById("canvas");
+        if (canvas.getContext) {
+          const ctx = canvas.getContext("2d");
+
+          ctx.fillStyle = "rgb(0, 200, 0)";
+          ctx.fillRect(10, 10, 3, 3);
+
+          ctx.arc(cX, cY, 2, 15, 16);
+
+        }
+      }
+    </script>
+  </head>
+  <body onload="draw();">
+    <canvas id="canvas" width="600" height="600" style="border:1px solid #000000;"></canvas>
+  </body>
+</html>
